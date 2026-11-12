@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — HARMAN Field Force</title>
-  <meta name="description" content="Privacy Policy for the HARMAN Field Force Android app by HARMAN Field Force.">
+  <meta name="description" content="Privacy Policy for the HARMAN Field Force Android app by HARMAN.">
   <style>
     :root {
       --ink: #1a1a1a;
@@ -14,6 +14,11 @@
       --card: #ffffff;
       --accent: #8a6a2f;
       --accent-soft: #f3ead6;
+      --ok: #1b5e20;
+      --ok-bg: #e8f5e9;
+      --warn: #e65100;
+      --warn-bg: #fff3e0;
+      --copy-bg: #f5f5f5;
     }
     * { box-sizing: border-box; }
     body {
@@ -28,7 +33,7 @@
       color: #f7f3ea;
       padding: 48px 20px 36px;
     }
-    header .wrap, main { max-width: 820px; margin: 0 auto; }
+    header .wrap, main { max-width: 860px; margin: 0 auto; }
     .eyebrow {
       font-family: "Segoe UI", Helvetica, Arial, sans-serif;
       letter-spacing: 0.16em;
@@ -49,6 +54,16 @@
       color: #cfc8ba;
       margin: 0;
     }
+    nav.toc {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+    nav.toc a { color: var(--accent); margin-right: 16px; }
     main { padding: 28px 20px 64px; }
     section {
       background: var(--card);
@@ -63,7 +78,14 @@
       font-weight: 650;
       margin: 0 0 10px;
     }
+    h3 {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      margin: 16px 0 8px;
+      color: var(--accent);
+    }
     p, li { font-size: 16.5px; }
+    .guide p, .guide li { font-size: 15px; font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
     ul { padding-left: 1.2rem; margin-top: 0; }
     a { color: var(--accent); }
     table {
@@ -90,6 +112,48 @@
       font-family: "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 14.5px;
     }
+    .copy-box {
+      background: var(--copy-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+      white-space: pre-wrap;
+      margin: 10px 0 6px;
+    }
+    .chars {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+    .ok {
+      background: var(--ok-bg);
+      color: var(--ok);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+    }
+    .warn {
+      background: var(--warn-bg);
+      color: var(--warn);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+    }
+    .answer {
+      border-left: 4px solid #2e7d32;
+      background: #f1f8e9;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 10px 0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+    }
+    .answer strong { display: block; margin-bottom: 4px; }
     footer {
       font-family: "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 13px;
@@ -101,15 +165,23 @@
 <body>
   <header>
     <div class="wrap">
-      <p class="eyebrow">HARMAN Field Force</p>
+      <p class="eyebrow">HARMAN</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">HARMAN Field Force &nbsp;·&nbsp; Android app &nbsp;·&nbsp; Effective date: 7 November 2026</p>
+      <p class="meta">HARMAN Field Force &nbsp;·&nbsp; Android app &nbsp;·&nbsp; Effective date: 12 November 2026</p>
     </div>
   </header>
 
   <main>
+    <nav class="toc">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#play-console">Play Console Location Declaration</a>
+    </nav>
+
+    <!-- ========== PRIVACY POLICY (public) ========== -->
+    <div id="privacy">
+
     <section>
-      <p>This Privacy Policy describes how HARMAN Field Force ("we", "our", or "the app") collects, uses, and protects information when you use our mobile application. The app is provided for authorized sales representatives of HARMAN Field Force. By using the app, you agree to the practices described in this policy.</p>
+      <p>This Privacy Policy describes how HARMAN Field Force ("we", "our", or "the app") collects, uses, and protects information when you use our mobile application. The app is provided for authorized sales representatives of HARMAN. By using the app, you agree to the practices described in this policy.</p>
     </section>
 
     <section>
@@ -120,7 +192,7 @@
         <li><strong>Sales data.</strong> Product details, distributor information, invoice numbers, serial numbers, quantity, and sale dates entered by you.</li>
         <li><strong>Customer information.</strong> Customer name and mobile number (optional fields) entered during sale entry.</li>
         <li><strong>Invoice images.</strong> Photos captured via the camera for invoice upload.</li>
-        <li><strong>Attendance and location data.</strong> GPS location (precise and, where available, approximate) captured when you mark attendance, check out, upload an invoice photo, or when a work geofence is active. If you grant background location, location may also be collected while the app is not open, so attendance and geofence features can continue.</li>
+        <li><strong>Attendance and location data.</strong> GPS location (precise and, where available, approximate) captured when you mark attendance, check out, or upload an invoice photo. After you mark Present at an assigned store, a store geofence may remain active for that visit. If you grant background location, location may be used while the app is minimized, closed, or the phone screen is locked, so the app can verify your physical presence at the assigned store, record arrival and departure, and support field visit monitoring until checkout or end of the working day.</li>
         <li><strong>Device information.</strong> Device model, OS version, app version, network status, and basic phone state, used for support, compatibility, and secure sign-in.</li>
         <li><strong>Notifications.</strong> A push token so we can send account and sales notifications to your device.</li>
       </ul>
@@ -135,6 +207,7 @@
         <li>To calculate and display incentive points and passbook data.</li>
         <li>To upload and store invoice images securely on our servers.</li>
         <li>To record attendance, checkout, and field location related to your work.</li>
+        <li>To verify your physical presence at assigned stores during scheduled visits, including when the app is in the background.</li>
         <li>To provide target versus achievement reports.</li>
         <li>To send notifications related to your account or sales activity.</li>
         <li>To show maps and Help Line contact actions inside the app.</li>
@@ -163,15 +236,15 @@
           </tr>
           <tr>
             <td>Precise location<br>(ACCESS_FINE_LOCATION)</td>
-            <td>Record GPS location for attendance, checkout, and invoice photo upload.</td>
+            <td>Mark attendance and checkout, capture GPS with invoice photo upload, and verify physical presence at the assigned store during a scheduled visit (including geofence enter/exit).</td>
           </tr>
           <tr>
             <td>Approximate location<br>(ACCESS_COARSE_LOCATION)</td>
-            <td>Use network-based location when precise GPS is unavailable.</td>
+            <td>Fallback network-based location when precise GPS is unavailable, for the same attendance, checkout, and store-presence verification purposes.</td>
           </tr>
           <tr>
             <td>Background location<br>(ACCESS_BACKGROUND_LOCATION)</td>
-            <td>Continue attendance and geofence location while the app is in the background or after the device restarts, for authorized field work only. Location is not used for advertising.</td>
+            <td>After mark-in, verify presence at the assigned store while the app is minimized, closed, or the screen is locked. A store geofence records arrival and departure for field visit monitoring until checkout or end of the working day. Used only for authorized field-force operations. Not used for advertising.</td>
           </tr>
           <tr>
             <td>Microphone<br>(RECORD_AUDIO)</td>
@@ -206,7 +279,7 @@
       <h2>4. Data Sharing</h2>
       <p>We do not sell, trade, or rent your personal information to third parties. Your data may be shared only in the following cases:</p>
       <ul>
-        <li>With HARMAN Field Force’s internal systems for sales processing, attendance, and incentive calculation.</li>
+        <li>With HARMAN’s internal systems for sales processing, attendance, and incentive calculation.</li>
         <li>With authorized distributors relevant to your sales entries.</li>
         <li>With service providers that process data on our behalf to run the app: Google Play services, Google Maps, and Google push notifications (Firebase Cloud Messaging / Google Cloud Messaging). These providers receive only what is needed for maps, location services, and notification delivery.</li>
         <li>When required by law or legal process.</li>
@@ -215,7 +288,7 @@
 
     <section>
       <h2>5. Data Storage and Security</h2>
-      <p>Sales, account, attendance, and invoice data are stored on secure servers managed by HARMAN Field Force. We implement industry-standard security measures to protect your information from unauthorized access, alteration, or disclosure.</p>
+      <p>Sales, account, attendance, and invoice data are stored on secure servers managed by HARMAN. We implement industry-standard security measures to protect your information from unauthorized access, alteration, or disclosure.</p>
       <p>Data sent to our servers is transmitted over HTTPS wherever the service supports it. Keep your login credentials private and do not share your device with unauthorized people while you are signed in.</p>
     </section>
 
@@ -227,7 +300,7 @@
 
     <section>
       <h2>7. Children’s Privacy</h2>
-      <p>This app is intended for use by authorized sales representatives of HARMAN Field Force. It is not directed at children under the age of 13, and we do not knowingly collect data from children.</p>
+      <p>This app is intended for use by authorized sales representatives of HARMAN. It is not directed at children under the age of 13, and we do not knowingly collect data from children.</p>
     </section>
 
     <section>
@@ -240,11 +313,93 @@
       <p>If you have any questions or concerns about this Privacy Policy, or if you want to request access, correction, or deletion of your account and associated data, contact:</p>
       <p>
         <strong>HARMAN Field Force</strong><br>
-        HARMAN Field Force<br>
+        HARMAN<br>
         Email: <a href="mailto:REPLACE_WITH_YOUR_SUPPORT_EMAIL">REPLACE_WITH_YOUR_SUPPORT_EMAIL</a>
       </p>
       <p>You can also use the Help Line section inside the app.</p>
     </section>
+
+    </div>
+
+    <!-- ========== PLAY CONSOLE LOCATION GUIDE ========== -->
+    <div id="play-console" class="guide">
+
+    <section>
+      <h2>Google Play Console — Location Permissions Guide</h2>
+      <p>Neeche ke texts Play Console declaration / Data safety forms mein copy-paste ke liye hain. Public Privacy Policy upar (sections 1–9) hai.</p>
+    </section>
+
+    <section>
+      <h2>1. Google Play Console mein kya select karein?</h2>
+      <p><strong>Does your app meet the Location permissions policy?</strong></p>
+      <p>Agar aapka app genuinely background location policy ki conditions meet karta hai, tabhi:</p>
+      <p class="ok"><strong>Yes, this app meets the Location permissions policy</strong> — select karein.</p>
+      <p class="warn">Sirf background location ki zaroorat hona approval ki guarantee nahi hai. Declaration, in-app disclosure, video, aur actual app behaviour teenon match hone chahiye.</p>
+    </section>
+
+    <section>
+      <h2>2. App purpose (500 characters)</h2>
+      <div class="copy-box">HARMAN Field Force is an enterprise app for authorized HARMAN sales representatives. It manages store attendance, checkout, sales entry, invoice capture, incentives, and field visit monitoring. Background location is used only after mark-in to verify the representative remains at the assigned store (geofence), including when the app is minimized or the screen is locked, until checkout or end of day.</div>
+      <p class="chars">≈ 400 characters — under 500 limit</p>
+    </section>
+
+    <section>
+      <h2>3. Location-based feature (500 characters)</h2>
+      <div class="copy-box">HARMAN Field Force uses background location to verify whether authorized sales representatives are physically present at their assigned stores during scheduled visits. Location access continues when the app is minimized or the phone screen is locked, allowing the system to record store arrival and departure and verify attendance. This is essential for field visit monitoring and attendance verification. Location is used only for authorized business operations.</div>
+      <p class="chars">Within 500 characters</p>
+      <p class="warn"><strong>Important:</strong> Is description ko tabhi submit karein jab app actually assigned store ki location ke saath employee ki presence verify karti ho, including when the app is in the background.</p>
+      <p class="ok">App mein yeh feature hai: Present mark-in par assigned store ke around 200m geofence; ENTER/EXIT se presence verify; app background / screen locked par bhi; checkout ya midnight par geofence band.</p>
+    </section>
+
+    <section>
+      <h2>4. Prominent disclosure (app mein)</h2>
+      <p>Permission prompt se pehle yeh message dikhao:</p>
+      <div class="copy-box">Background Location Access
+
+HARMAN Field Force collects your location even when the app is not in use or your phone screen is locked.
+
+This allows HARMAN to verify your presence at assigned stores, monitor store visits, and record attendance.
+
+Your location is used for authorized field-force operations only.
+
+By continuing, you acknowledge and consent to this location access.</div>
+      <p>Iske baad Android ka location permission prompt. User ki clear consent zaroori hai.</p>
+    </section>
+
+    <section>
+      <h2>5. Video submission</h2>
+      <ul>
+        <li>YouTube Unlisted link chahiye (Google Drive kaafi nahi).</li>
+        <li>Video ~30 seconds.</li>
+        <li>Dikhayein: disclosure → permission → mark-in → app minimize / lock → store presence verify.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Declaration wording</h2>
+      <h3>Precise location</h3>
+      <div class="copy-box">Used to mark attendance and checkout, capture GPS with invoice photo upload, and verify the sales representative’s physical presence at the assigned store during a scheduled visit (including geofence enter/exit).</div>
+      <h3>Approximate location</h3>
+      <div class="copy-box">Used as a fallback network-based location when precise GPS is unavailable, for the same attendance, checkout, and store-presence verification purposes.</div>
+      <h3>Background location</h3>
+      <div class="copy-box">Used after mark-in to verify presence at the assigned store while the app is minimized, closed, or the screen is locked. A store geofence records arrival and departure for field visit monitoring until checkout or end of the working day. Not used for advertising.</div>
+    </section>
+
+    <section>
+      <h2>7. Confirmed answers (from app code)</h2>
+      <h3>1. Employee ki location kab monitor karni hai?</h3>
+      <div class="answer">
+        <strong>Answer: Only near or during an assigned store visit</strong>
+        Present mark-in par store pe 200m geofence. Continuously har jagah track nahi.
+      </div>
+      <h3>2. Location monitoring kab honi chahiye?</h3>
+      <div class="answer">
+        <strong>Answer: Only during working hours / assigned store visits</strong>
+        Mark-in ke baad start, midnight expire, checkout par remove. 24×7 off-duty tracking nahi.
+      </div>
+    </section>
+
+    </div>
 
     <footer>
       © 2026 HARMAN Field Force. All rights reserved.

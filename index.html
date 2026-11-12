@@ -174,7 +174,7 @@
   <main>
     <nav class="toc">
       <a href="#privacy">Privacy Policy</a>
-      <a href="#play-console">Play Console Location Declaration</a>
+      <a href="#play-console">Location Permissions Declaration</a>
     </nav>
 
     <!-- ========== PRIVACY POLICY (public) ========== -->
@@ -321,39 +321,29 @@
 
     </div>
 
-    <!-- ========== PLAY CONSOLE LOCATION GUIDE ========== -->
+    <!-- ========== LOCATION PERMISSIONS DECLARATION ========== -->
     <div id="play-console" class="guide">
 
     <section>
-      <h2>Google Play Console — Location Permissions Guide</h2>
-      <p>Neeche ke texts Play Console declaration / Data safety forms mein copy-paste ke liye hain. Public Privacy Policy upar (sections 1–9) hai.</p>
+      <h2>10. Location Permissions Declaration</h2>
+      <p>HARMAN Field Force meets the Google Play Location permissions policy. Location access is limited to authorized field-force operations for store attendance, visit monitoring, and related business features described below.</p>
+      <p class="ok"><strong>Policy compliance:</strong> Yes, this app meets the Location permissions policy.</p>
     </section>
 
     <section>
-      <h2>1. Google Play Console mein kya select karein?</h2>
-      <p><strong>Does your app meet the Location permissions policy?</strong></p>
-      <p>Agar aapka app genuinely background location policy ki conditions meet karta hai, tabhi:</p>
-      <p class="ok"><strong>Yes, this app meets the Location permissions policy</strong> — select karein.</p>
-      <p class="warn">Sirf background location ki zaroorat hona approval ki guarantee nahi hai. Declaration, in-app disclosure, video, aur actual app behaviour teenon match hone chahiye.</p>
+      <h2>11. App Purpose</h2>
+      <p>HARMAN Field Force is an enterprise app for authorized HARMAN sales representatives. It manages store attendance, checkout, sales entry, invoice capture, incentives, and field visit monitoring. Background location is used only after mark-in to verify the representative remains at the assigned store (geofence), including when the app is minimized or the screen is locked, until checkout or end of day.</p>
     </section>
 
     <section>
-      <h2>2. App purpose (500 characters)</h2>
-      <div class="copy-box">HARMAN Field Force is an enterprise app for authorized HARMAN sales representatives. It manages store attendance, checkout, sales entry, invoice capture, incentives, and field visit monitoring. Background location is used only after mark-in to verify the representative remains at the assigned store (geofence), including when the app is minimized or the screen is locked, until checkout or end of day.</div>
-      <p class="chars">≈ 400 characters — under 500 limit</p>
+      <h2>12. Location-Based Feature</h2>
+      <p>HARMAN Field Force uses background location to verify whether authorized sales representatives are physically present at their assigned stores during scheduled visits. Location access continues when the app is minimized or the phone screen is locked, allowing the system to record store arrival and departure and verify attendance. This is essential for field visit monitoring and attendance verification. Location is used only for authorized business operations.</p>
+      <p>After a Present mark-in, the app creates a store geofence (approximately 200 meters) around the assigned store coordinates. Enter and exit events verify presence even when the app is in the background or the screen is locked. The geofence ends at checkout or at the end of the working day.</p>
     </section>
 
     <section>
-      <h2>3. Location-based feature (500 characters)</h2>
-      <div class="copy-box">HARMAN Field Force uses background location to verify whether authorized sales representatives are physically present at their assigned stores during scheduled visits. Location access continues when the app is minimized or the phone screen is locked, allowing the system to record store arrival and departure and verify attendance. This is essential for field visit monitoring and attendance verification. Location is used only for authorized business operations.</div>
-      <p class="chars">Within 500 characters</p>
-      <p class="warn"><strong>Important:</strong> Is description ko tabhi submit karein jab app actually assigned store ki location ke saath employee ki presence verify karti ho, including when the app is in the background.</p>
-      <p class="ok">App mein yeh feature hai: Present mark-in par assigned store ke around 200m geofence; ENTER/EXIT se presence verify; app background / screen locked par bhi; checkout ya midnight par geofence band.</p>
-    </section>
-
-    <section>
-      <h2>4. Prominent disclosure (app mein)</h2>
-      <p>Permission prompt se pehle yeh message dikhao:</p>
+      <h2>13. Prominent Disclosure</h2>
+      <p>Before the Android runtime permission prompt, the app shows the following in-app disclosure and requires affirmative consent:</p>
       <div class="copy-box">Background Location Access
 
 HARMAN Field Force collects your location even when the app is not in use or your phone screen is locked.
@@ -363,40 +353,38 @@ This allows HARMAN to verify your presence at assigned stores, monitor store vis
 Your location is used for authorized field-force operations only.
 
 By continuing, you acknowledge and consent to this location access.</div>
-      <p>Iske baad Android ka location permission prompt. User ki clear consent zaroori hai.</p>
+      <p>After the user taps Agree, the system location permission dialog is shown. Location is not requested without this consent step.</p>
     </section>
 
     <section>
-      <h2>5. Video submission</h2>
+      <h2>14. Demonstration Video</h2>
+      <p>A YouTube (Unlisted) demonstration video is provided for Google Play review. The video shows:</p>
       <ul>
-        <li>YouTube Unlisted link chahiye (Google Drive kaafi nahi).</li>
-        <li>Video ~30 seconds.</li>
-        <li>Dikhayein: disclosure → permission → mark-in → app minimize / lock → store presence verify.</li>
+        <li>The in-app prominent disclosure for background location</li>
+        <li>The Android location permission prompt and user consent</li>
+        <li>Store mark-in and geofence activation</li>
+        <li>Store presence verification while the app is minimized or the screen is locked</li>
       </ul>
     </section>
 
     <section>
-      <h2>6. Declaration wording</h2>
+      <h2>15. Location Data Types</h2>
       <h3>Precise location</h3>
-      <div class="copy-box">Used to mark attendance and checkout, capture GPS with invoice photo upload, and verify the sales representative’s physical presence at the assigned store during a scheduled visit (including geofence enter/exit).</div>
+      <p>Used to mark attendance and checkout, capture GPS with invoice photo upload, and verify the sales representative’s physical presence at the assigned store during a scheduled visit (including geofence enter/exit).</p>
       <h3>Approximate location</h3>
-      <div class="copy-box">Used as a fallback network-based location when precise GPS is unavailable, for the same attendance, checkout, and store-presence verification purposes.</div>
+      <p>Used as a fallback network-based location when precise GPS is unavailable, for the same attendance, checkout, and store-presence verification purposes.</p>
       <h3>Background location</h3>
-      <div class="copy-box">Used after mark-in to verify presence at the assigned store while the app is minimized, closed, or the screen is locked. A store geofence records arrival and departure for field visit monitoring until checkout or end of the working day. Not used for advertising.</div>
+      <p>Used after mark-in to verify presence at the assigned store while the app is minimized, closed, or the screen is locked. A store geofence records arrival and departure for field visit monitoring until checkout or end of the working day. Not used for advertising.</p>
     </section>
 
     <section>
-      <h2>7. Confirmed answers (from app code)</h2>
-      <h3>1. Employee ki location kab monitor karni hai?</h3>
-      <div class="answer">
-        <strong>Answer: Only near or during an assigned store visit</strong>
-        Present mark-in par store pe 200m geofence. Continuously har jagah track nahi.
-      </div>
-      <h3>2. Location monitoring kab honi chahiye?</h3>
-      <div class="answer">
-        <strong>Answer: Only during working hours / assigned store visits</strong>
-        Mark-in ke baad start, midnight expire, checkout par remove. 24×7 off-duty tracking nahi.
-      </div>
+      <h2>16. Location Monitoring Scope</h2>
+      <h3>When location is monitored</h3>
+      <p class="answer"><strong>Only near or during an assigned store visit</strong>
+      Location is monitored through a store geofence around the assigned store after Present mark-in. The app does not continuously track the employee everywhere.</p>
+      <h3>When monitoring is active</h3>
+      <p class="answer"><strong>Only during working hours / assigned store visits</strong>
+      Monitoring starts after Present mark-in, expires at the end of the working day, and is removed on checkout. Location is not monitored 24 hours a day outside assigned store visits.</p>
     </section>
 
     </div>
